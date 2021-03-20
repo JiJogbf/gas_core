@@ -4,7 +4,7 @@
  * @brief base class for all elements of this library
 */
 namespace gas{
-    // class str;
+    class str;
 
     class obj{
     public:
@@ -17,6 +17,6 @@ namespace gas{
          * @brief converting this object 
          * to string representation
         */
-        // virtual str to_str(); 
+        virtual str* to_str(); 
     };
 }

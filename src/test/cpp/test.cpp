@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include <gas\core\str.hpp>
 #include <gas\core\obj.hpp>
 
 struct foo: public gas::obj{
@@ -11,7 +12,9 @@ struct foo: public gas::obj{
     }
 
     void act(){
-        std::cout << "working" << std::endl;
+        gas::str* s = to_str();
+        std::cout << "working: " << s->content() << std::endl;
+        delete s;
     }
 };
 
