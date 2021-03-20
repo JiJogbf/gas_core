@@ -4,9 +4,13 @@
 #include "ptr.hpp"
 
 namespace gas{
-    obj::~obj(){}
+namespace core{
 
-    ptr<str> obj::to_str(){
-        return ptr<str>(new str("obj: null"));
-    }
+obj::~obj(){}
+
+ptr<str> obj::to_str(){
+    return ptr<str>(new str("obj: null"));
+}
+
+}
 }

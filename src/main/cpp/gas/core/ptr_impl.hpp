@@ -1,4 +1,5 @@
 namespace gas{
+namespace core{
 
 template<class T>
 ptr<T>::ptr(T* value): _value(value), _ref_count(1){}
@@ -47,5 +48,6 @@ template<class T>
 ptr<T> make_ptr(T* p){
     return ptr<T>(p);
 }
-
+    
+}
 }

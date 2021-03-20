@@ -5,7 +5,8 @@
 #include <gas\core\ptr.hpp>
 
 int main(int argc, char** argv){
-    gas::ptr<gas::str> s(new gas::str("hello world!"));
+    using namespace gas::core;
+    ptr<str> s(new str("hello world!"));
     std::cout << s->content() << std::endl;
     return 0;
 }

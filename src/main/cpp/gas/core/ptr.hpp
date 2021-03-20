@@ -4,6 +4,7 @@
 #include "types.hpp"
 
 namespace gas{
+namespace core{
 
 /**
  * @brief simple smart pointer 
@@ -57,6 +58,7 @@ public:
 template<class T>
 ptr<T> make_ptr(T* p);
 
+}
 }
 
 #include "ptr_impl.hpp"

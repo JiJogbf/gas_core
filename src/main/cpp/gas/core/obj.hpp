@@ -6,19 +6,23 @@
  * @brief base class for all elements of this library
 */
 namespace gas{
-    class str;
+namespace core{
 
-    class obj{
-    public:
-        /**
-         * @brief dtor
-        */
-        virtual ~obj() = 0;
+class str;
 
-        /**
-         * @brief converting this object 
-         * to string representation
-        */
-        virtual ptr<str> to_str(); 
-    };
+class obj{
+public:
+    /**
+     * @brief dtor
+    */
+    virtual ~obj() = 0;
+
+    /**
+     * @brief converting this object 
+     * to string representation
+    */
+    virtual ptr<str> to_str(); 
+};
+
+}
 }
