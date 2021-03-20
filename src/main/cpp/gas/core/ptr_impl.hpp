@@ -37,13 +37,6 @@ T* ptr<T>::operator->(){
     return _value;
 }
 
-// template<class T>
-// str* ptr<T>::to_str(){
-//     // @todo: as soon as posible we
-//     // should make formated string construction
-//     return new str("");
-// }
-
 template<class T>
 ptr<T> make_ptr(T* p){
     return ptr<T>(p);

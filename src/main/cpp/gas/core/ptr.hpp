@@ -47,12 +47,6 @@ public:
      * member access operator
     */
     T* operator->();
-
-    // /**
-    //  * converting value in smart pointer to string if 
-    //  * to_str method implemented properly
-    // */
-    // str* to_str() override;
 };
 
 template<class T>
