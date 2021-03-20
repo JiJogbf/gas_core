@@ -1,7 +1,6 @@
 #pragma once
 
 #include <cstdint>
-#include <vector>
 
 namespace gas{
     // TODO: add compiler define for unicode mode
@@ -20,7 +19,4 @@ namespace gas{
 
     using f64 = double;
     using f32 = float;
-
-    // @todo: replace stl containers with own implementation's
-    using ByteArray = std::vector<u8>;
 }
