@@ -73,8 +73,8 @@ namespace gas{
         return *this;
     }
 
-    str* str::to_str(){
-        return new str(*this);
+    ptr<str> str::to_str(){
+        return ptr<str>(new str(*this));
     }
 
     char_cp str::content()const{

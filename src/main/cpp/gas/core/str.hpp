@@ -79,7 +79,7 @@ namespace gas{
          * for this class will return simple copy of 
          * this object.
         */
-        str* to_str() override;
+        ptr<str> to_str() override;
 
         /**
          * @brief access to string buffer in object 

@@ -1,5 +1,7 @@
 #pragma once 
 
+#include "ptr.hpp"
+
 /**
  * @brief base class for all elements of this library
 */
@@ -17,6 +19,6 @@ namespace gas{
          * @brief converting this object 
          * to string representation
         */
-        virtual str* to_str(); 
+        virtual ptr<str> to_str(); 
     };
 }

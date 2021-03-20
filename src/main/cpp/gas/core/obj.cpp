@@ -1,11 +1,12 @@
 #include "obj.hpp"
 
 #include "str.hpp"
+#include "ptr.hpp"
 
 namespace gas{
     obj::~obj(){}
 
-    str* obj::to_str(){
-        return new str("obj: null");
+    ptr<str> obj::to_str(){
+        return ptr<str>(new str("obj: null"));
     }
 }

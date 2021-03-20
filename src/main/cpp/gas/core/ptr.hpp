@@ -2,7 +2,6 @@
 #define GAS_PTR_T_HPP_27012021_235423
 
 #include "types.hpp"
-#include "obj.hpp"
 
 namespace gas{
 
@@ -11,7 +10,7 @@ namespace gas{
  *  generic implementation
 */
 template<class T>
-class ptr: public obj{
+class ptr{
 private:
     T*  _value;
     i64 _ref_count;
@@ -48,11 +47,11 @@ public:
     */
     T* operator->();
 
-    /**
-     * converting value in smart pointer to string if 
-     * to_str method implemented properly
-    */
-    str* to_str() override;
+    // /**
+    //  * converting value in smart pointer to string if 
+    //  * to_str method implemented properly
+    // */
+    // str* to_str() override;
 };
 
 template<class T>
